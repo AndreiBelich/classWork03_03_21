@@ -8,8 +8,9 @@ body{
   font-size: 1.2em;
 }
 
+
 .card-wrapper{
-  background-color: brown;
+  display: inline-block;
   width: 350px;
   padding: 30px;
   margin: 30px;
@@ -17,6 +18,25 @@ body{
   overflow: hidden;
   border-radius: 20px;
 }
+
+.card-wrapper:nth-child(3n+1)
+{
+  background: rgb(255,186,153);
+  background: linear-gradient(90deg, rgba(255,186,153,1) 0%, rgba(255,142,152,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.card-wrapper:nth-child(3n+2)
+{
+  background: rgb(133,197,245);
+  background: linear-gradient(106deg, rgba(133,197,245,1) 0%, rgba(31,148,228,1) 100%, rgba(255,142,152,1) 100%);
+}
+
+.card-wrapper:nth-child(3n+3)
+{
+  background: rgb(116,216,208);
+  background: linear-gradient(106deg, rgba(116,216,208,1) 0%, rgba(17,209,186,1) 100%, rgba(255,142,152,1) 100%);
+}
+
 
 .card-wrapper::before{
   content: "";
